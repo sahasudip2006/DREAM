@@ -37,10 +37,12 @@ async def save_group(bot, message):
                 pass
             await bot.leave_chat(message.chat.id)
             return
-        buttons = [
+        buttons = [[
                     InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ', url="t.me/Unknown_Man_On_Mission"),
                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇᴅs', url='https://t.me/Cinema_Moviesz')
-                  ]
+                   ],[
+                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/UNKNOWN_MAN_ON_MISSION")
+                  ]]                  
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
@@ -59,11 +61,10 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('🌺 ʜᴇʟᴘ ✨', url=f"https://t.me/{temp.U_NAME}?start=help"),
-                                                                           InlineKeyboardButton('✨ ᴍʏ ᴄʜᴀɴɴᴇʟ 💕', url='https://t.me/filmy_men')
-                                                                        ],[
-                                                                           InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/syrus_143_hpy")
-                                                                         ]]
+                                                                           InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ', url="t.me/Unknown_Man_On_Mission"),
+                                                                           InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇᴅs', url='https://t.me/Cinema_Moviesz')
+                                                                                                                                                       InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇᴅs', url='https://t.me/Cinema_Moviesz')
+                                                                          ]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
