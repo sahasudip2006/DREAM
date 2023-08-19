@@ -35,8 +35,8 @@ async def start(client, message):
                 
             ], 
             [
-                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
+                    InlineKeyboardButton('👉 ʜᴇʟᴘ',  url=f"https://t.me/{temp.U_NAME}?start=help"),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈',  url=f"https://t.me/{temp.U_NAME}?start=about")
                 ],[
                     InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
                   ]]
