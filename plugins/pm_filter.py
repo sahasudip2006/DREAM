@@ -145,18 +145,18 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ғ'ɪɴғᴏ', 'ʀᴇǫɪɴғᴏ'),
+                    ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ғ'ᴍᴏᴠɪᴇs', 'ᴍɪɴғᴏ'),
+                    ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ғ'sᴇʀɪᴇs', 'sɪɴғᴏ')
                 ]
             )
                 
@@ -167,18 +167,18 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
     try:
@@ -566,7 +566,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/Filmy_Men')
+                              InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                                                   
                              ]
                             ]
@@ -612,7 +612,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/filmy_men')
+                  InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url=CHNL_LNK)
                  ]
                 ]
             )
@@ -1190,7 +1190,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("👩‍🦯 Back", callback_data="start"),
-                    InlineKeyboardButton("Contact Us ✅", url="t.me/Link_Reporter_Bot")
+                    InlineKeyboardButton("Contact Us ✅", url="t.me/Unknown_Man_On_Mission")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1370,18 +1370,18 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
                 
@@ -1392,23 +1392,23 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'Info 📮', 'reqinfo'),
-                    InlineKeyboardButton(f'Movie 🎬', 'minfo'),
-                    InlineKeyboardButton(f'Series 🎥', 'sinfo')
+                    InlineKeyboardButton(f'ɪɴғᴏ', 'reqinfo'),
+                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'minfo'),
+                    InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
                 ]
             )
 
     btn.insert(0, [
-        InlineKeyboardButton(f'Downlad 📮', url='https://t.me/+PkQmIhZMVDxhZmVl')
+        InlineKeyboardButton(f'🤔 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🤔', url='https://t.me/+PkQmIhZMVDxhZmVl')
     ])
 
     if offset != "":
@@ -1475,7 +1475,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i> Hey {message.from_user.mention},❗Your Search Results</b> ‛{search}’👇🏻 </i>"
+        cap = f"<b><i> ᴛʜᴇ ʀᴇsᴜʟᴛs ғᴏʀ☞ ☞ {search}/n ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ☞ {message.from_user.mention}/n ‣ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 𝟷𝟶 ᴍɪɴᴜᴛᴇs. /b> </i>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
