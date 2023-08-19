@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '2229357'))
-API_HASH = environ.get('API_HASH', '31f183a5a075fd4996cb8ad59e7b794f')
-BOT_TOKEN = environ.get('BOT_TOKEN', '2062193742:AAEQbg5PG24kRkUpxnwhhXs90q-0P_ZMAws')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -44,7 +44,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -60,8 +60,8 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/filmy_rog')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/filmy_men')
 MSG_ALRT = environ.get('MSG_ALRT', 'Thanks To Using Me 😇')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001880454503'))
-REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001935569228'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001987471827'))
+REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001814178865'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'filmymenchat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
