@@ -1408,7 +1408,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton(f'Info 📮', 'reqinfo')
+        InlineKeyboardButton(f'Downlad 📮', url='https://t.me/+PkQmIhZMVDxhZmVl')
     ])
 
     if offset != "":
