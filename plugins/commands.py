@@ -21,14 +21,25 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [
-            [
-                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs ✨', url='https://t.me/Filmy_men')
+        buttons = [[
+                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],
             [
-                InlineKeyboardButton('ℹ️ ʜᴇʟᴘ 💕', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            ]
-            ]
+                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
+              
+                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
+            ],
+            [
+                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                
+            ], 
+            [
+                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
+                ],[
+                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -42,16 +53,23 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],
+            [
+                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
+              
+                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
+            ],
+            [
+                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                
+            ], 
+            [
+                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💕 ᴄʜᴀɴɴᴇʟ ✨', url='https://t.me/Filmy_men'),
-                    InlineKeyboardButton('💖 ɢʀᴏᴜᴘ 🌺', url='https://t.me/Filmy_rog')
-                ],[
-                    InlineKeyboardButton('💞 ʜᴇʟᴘ 💕', callback_data='help'),
-                                         
-                    InlineKeyboardButton('☺ ᴀʙᴏᴜᴛ ᴍᴇ 🙈', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/Syrus_143_hpy')
+                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -91,15 +109,23 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],
+            [
+                InlineKeyboardButton('👉 ᴍᴄᴜ', url=f"https://t.me/Marvel_Studios_Moviesz"),
+              
+                InlineKeyboardButton('ᴅᴄ 👈', url=f"https://t.me/Dc_Moviesz"),
+            ],
+            [
+                InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                
+            ], 
+            [
+                    InlineKeyboardButton('👉 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴍᴇ 👈', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💕 ᴄʜᴀɴɴᴇʟ ✨', url='https://t.me/filmy_men'),
-                    InlineKeyboardButton('🌺 ɢʀᴏᴜᴘ 💖', url='https://t.me/filmy_rog')
-                ],[
-                    InlineKeyboardButton('✨ ʜᴇʟᴘ 🛐', callback_data='help'),
-                    InlineKeyboardButton('☺ ᴀʙᴏᴜᴛ ᴍᴇ 🙈', callback_data='about')
-                ],[
-                    InlineKeyboardButton('ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/syrus_143_hpy')
+                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʟɪɴᴋs / ᴀɴʏ ǫᴜᴇʀɪᴇs ᴅᴍ ʜᴇʀᴇ ✅',url='https://t.me/UNKNOWN_MAN_ON_MISSION')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -150,7 +176,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 🎬', url='https://t.me/moviesss4ers')
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='CHNL_LINK')
                          ]
                         ]
                     )
@@ -166,7 +192,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/filmy_men')
+                          InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='CHNL_LINK')
                          ]
                         ]
                     )
@@ -234,7 +260,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('ᴊᴏɪɴ ғᴏ𝟺 ᴍᴏʀᴇ 🎬', url='https://t.me/filmy_men')
+                      InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='CHNL_LINK')
                      ]
                     ]
                 )
@@ -274,7 +300,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/filmy_men')
+              InlineKeyboardButton('ᴍᴜsᴛ ᴊᴏɪɴ ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ', url='CHNL_LINK')
              ]
             ]
         )
