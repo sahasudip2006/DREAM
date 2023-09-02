@@ -31,7 +31,7 @@ async def start(client, message):
             ],
             [
                 InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
                 
             ], 
             [
@@ -62,7 +62,7 @@ async def start(client, message):
             ],
             [
                 InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
                 
             ], 
             [
@@ -88,7 +88,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "🔥 ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -118,7 +118,7 @@ async def start(client, message):
             ],
             [
                 InlineKeyboardButton('👉 ᴜᴘᴅᴀᴛᴇs', url=f"https://t.me/Cinema_Moviesz"), 
-                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/Moviesz_Seriesz"),
+                InlineKeyboardButton('ᴍᴏᴠɪᴇs/sᴇʀɪᴇs 👈', url=f"https://t.me/MOVIES_SERIES_GROUPS"),
                 
             ], 
             [
