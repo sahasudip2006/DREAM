@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '2229357'))
-API_HASH = environ.get('API_HASH', '31f183a5a075fd4996cb8ad59e7b794f')
-BOT_TOKEN = environ.get('BOT_TOKEN', '2062193742:AAEQbg5PG24kRkUpxnwhhXs90q-0P_ZMAws')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -50,18 +50,18 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Others
 
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'atglinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '12fa03d33c760854e5249b00d0ea0adff7736729')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'TinyFy.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'f999bc3f142a37b8db08754279b7be7a81ef8604')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001818118297').split()]
 PORT = environ.get("PORT", "8080")
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/filmy_rog')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/filmy_men')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Ott_Movie_Request_Group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/S_Hindi_Movie')
 MSG_ALRT = environ.get('MSG_ALRT', 'Thanks To Using Me 😇')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001880454503'))
-REQUEST_LOGS = int(environ.get('REQUEST_LOGS', '-1001935569228'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+REQUEST_LOGS = int(environ.get('REQUEST_LOGS', ''))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'filmymenchat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -75,7 +75,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001935569228')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
