@@ -60,10 +60,12 @@ async def save_group(bot, message):
                                                  video=(MELCOW_VID),
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
-                                                                         [
-                                                                           InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ', url="t.me/Unknown_Man_On_Mission"),
-                                                                           InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇᴅs', url='https://t.me/Cinema_Moviesz')                                                                                                                                                       
-                                                                          ]
+                                                                         [[
+                                                                           InlineKeyboardButton('🌺 ʜᴇʟᴘ ✨', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                                                                           InlineKeyboardButton('✨ ᴍʏ ᴄʜᴀɴɴᴇʟ 💕', url='https://t.me/filmy_men')
+                                                                        ],[
+                                                                           InlineKeyboardButton("ʙᴏᴛ ᴏᴡɴᴇʀ", url="t.me/syrus_143_hpy")
+                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
