@@ -176,9 +176,9 @@ If You Still Don't Get Movies then Owner Will Update Within 12Hour"""
 
 ╔═ ❁ ════════╗
 
-♡ <a href=https://t.me/Filmy_Men> @Filmy_Men</a>
+♡ <a href=https://t.me/Ott_Movie_Request_Group> @Ott_Movie_Request_Group
 
-♡ <a href=https://t.me/Filmy_Rog>@Filmy_Rog </a>
+♡ <a href=https://t.me/Ott_Movie_Request_Group>@Ott_Movie_Request_Group </a>
 
 ╚════════ ❁ ═╝</b>"""
 
