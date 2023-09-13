@@ -132,7 +132,7 @@ Nᴀᴍᴇ - {}"""
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ : 亗 SUDIP SAHA
 • ᴜꜱᴇʀɴᴀᴍᴇ : @SUDIPSAHA06
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/Syrus_143_hpy'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='@SUDIPSAHA06'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
     REQINFO = """
 Always Request in Correct Spelling... check Spellings on Google ...
