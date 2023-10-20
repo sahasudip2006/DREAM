@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs ✨', url='https://t.me/S_Hindi_Movie')
+                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs ✨', url='https://t.me/S_Hindi_Movie1')
             ],
             [
                 InlineKeyboardButton('ℹ️ ʜᴇʟᴘ 💕', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💕 ᴄʜᴀɴɴᴇʟ ✨', url='https://t.me/S_Hindi_Movie'),
+                    InlineKeyboardButton('💕 ᴄʜᴀɴɴᴇʟ ✨', url='https://t.me/S_Hindi_Movie1'),
                     InlineKeyboardButton('💖 ɢʀᴏᴜᴘ 🌺', url='https://t.me/Ott_Movie_Request_Group')
                 ],[
                     InlineKeyboardButton('💞 ʜᴇʟᴘ 💕', callback_data='help'),
@@ -93,7 +93,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💕  ✨', url='https://t.me/S_Hindi_Movie'),
+                    InlineKeyboardButton('💕  ✨', url='https://t.me/S_Hindi_Movie1'),
                     InlineKeyboardButton('🌺 ɢʀᴏᴜᴘ 💖', url='https://t.me/Ott_Movie_Request_Group')
                 ],[
                     InlineKeyboardButton('✨ ʜᴇʟᴘ 🛐', callback_data='help'),
@@ -150,7 +150,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 🎬', url='https://t.me/S_Hindi_Movie')
+                          InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 🎬', url='https://t.me/S_Hindi_Movie1')
                          ]
                         ]
                     )
@@ -166,7 +166,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie')
+                          InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie1')
                          ]
                         ]
                     )
@@ -234,7 +234,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('ᴊᴏɪɴ ғᴏ𝟺 ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie')
+                      InlineKeyboardButton('ᴊᴏɪɴ ғᴏ𝟺 ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie1')
                      ]
                     ]
                 )
@@ -274,7 +274,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie')
+              InlineKeyboardButton('ᴊᴏɪɴ ғᴏʀ ᴍᴏʀᴇ 🎬', url='https://t.me/S_Hindi_Movie1')
              ]
             ]
         )
